@@ -1,12 +1,206 @@
-<Doctype HTML>
-  <html>
-     <head>
-        <title>hello</title>
-        
-     </head>
-     <body>
-        hello
-     </body>
-     
-  </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Rochester&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="styler12.css">
+ <script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+     <div class="log">
+       <a href="home.html">  <img srcset="logo.png" src="logo.png" alt="logo.png"></a>
+       <!-- <p class="zantwar">Zentwar</p>-->
+      </div>
+      <div class="ulres">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Lessons</a></li>
+        </ul>
+      </div>
+      <div onclick="showmenu()" class="burger">
+        <div id="cross1" class="lines"></div>
+        <div id="remline" class="lines"></div>
+        <div id="cross2" class="lines"></div>
+      </div>
+  <div id="headside">
+      <div id="sidemenu">
+        <a href="home.html">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a onclick="openlessons()" href="#">Lessons</a>
+        <div id="lessons">
+          <ol>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li> <a href="#">JavaScript</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    </nav>
+  <!-- web header ends-->
+    <div class="introweb">
+      <h2>learn and Build</h2>
+      <p>learn with us and grow yourself.<br>Build up your career.</p>
+      <button class="subbtn" onclick="subform()">Subscribe</button>
+      <div id="sub">
+      <div class="subf">
+        <h3>Join our Newsletter</h3>
+        <p>Enter your email to get latest information. You can also unsubscribe us.</p>
+        <form action="">
+          <input placeholder="Email" type="email" id="sub_email">
+          <input id="sub_btn" type="submit" value="Subscribe">
+        </form>
+      </div>
+      </div>
+    </div>
+  </header>
+  <section class="blog">
+    <h3>latest post</h3>
+    <div class="liner">
+    </div>
+    <div class="posts">
+      <div id="item1" class="items">
+        <h3>What is the future of AI ?</h3>
+        <i id="share" class="material-icons">share</i>
+        <img src="aiimg.jpg" alt="aiimg.jpg">
+         <p>Some experts believe that Ai will eventually take over many of the tasks that...<a href="try.html" class="a">more</a></p>
+         <div class="voting">
+           <button onclick="liker()" id="likebtn">
+             <span class="material-icons">
+thumb_up
+</span>
+<input id="like" type="number" value="0">
+           </button>
+           <button onclick="disliker()" id="dislikebtn">
+             <span class="material-icons">
+thumb_down
+</span>
+<input id="dislike" type="number" value="0">
+           </button>
+         </div>
+         <a class="more" href="try.html">Read more</a>
+         
+      </div>
+      <div id="item2" class="items">
+         <h3>What is the future of AI ?</h3>
+        <i id="share" class="material-icons">share</i>
+        <img src="aiimg.jpg" alt="aiimg.jpg">
+         <p>Some experts believe that Ai will eventually take over many of the tasks that...<a href="try.html" class="a">more</a></p>
+         <div class="voting">
+           <button onclick="liker()" id="likebtn">
+             <span class="material-icons">
+thumb_up
+</span>
+<input id="like" type="number" value="0">
+           </button>
+           <button onclick="disliker()" id="dislikebtn">
+             <span class="material-icons">
+thumb_down
+</span>
+<input id="dislike" type="number" value="0">
+           </button>
+         </div>
+         <a class="more" href="try.html">Read more</a>
+      </div>
+      <div id="item3" class="items"> <h3>What is the future of AI ?</h3>
+       <i id="share" class="material-icons">share</i>
+       <img src="aiimg.jpg" alt="aiimg.jpg">
+       <p>Some experts believe that Ai will eventually take over many of the tasks that...<a href="try.html" class="a">more</a></p>
+       <div class="voting">
+         <button onclick="liker()" id="likebtn">
+           <span class="material-icons">
+             thumb_up
+           </span>
+           <input id="like" type="number" value="0">
+         </button>
+         <button onclick="disliker()" id="dislikebtn">
+           <span class="material-icons">
+             thumb_down
+           </span>
+           <input id="dislike" type="number" value="0">
+         </button>
+       </div>
+       <a class="more" href="try.html">Read more</a></div>
+      <div id="item4" class="items">
+         <h3>What is the future of AI ?</h3>
+         <i id="share" class="material-icons">share</i>
+         <img src="aiimg.jpg" alt="aiimg.jpg">
+         <p>Some experts believe that Ai will eventually take over many of the tasks that...<a href="try.html" class="a">more</a></p>
+         <div class="voting">
+           <button onclick="liker()" id="likebtn">
+             <span class="material-icons">
+               thumb_up
+             </span>
+             <input id="like" type="number" value="0">
+           </button>
+           <button onclick="disliker()" id="dislikebtn">
+             <span class="material-icons">
+               thumb_down
+             </span>
+             <input id="dislike" type="number" value="0">
+           </button>
+         </div>
+         <a class="more" href="try.html">Read more</a>
+      </div>
+
+    </div>
+    <a class="see" href="#">See all</a>
+  </section>
+<section class="ask_q">
+    <div class="ask_info">
+      
+    <h3>Ask Questions</h3>
+    <p>If you have any problem in computer science field you can ask us a questions.</p>
+    </div>
+    <form action="">
+      <textarea  name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="submit">
+    </form>
+  </section>
+  <footer>
+    <div class="footitems">
+      <h4>Web development</h4>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+      <a href="#">PHP</a>
+      <a href="#">Node.js</a>
+    </div>
+    <div class="footitems">
+      <h4>App development</h4>
+      <a href="#">Python</a>
+      <a href="#">C#</a>
+    </div>
+    <div class="footitems">
+      <h4>Programming language</h4>
+      <a href="#">Python</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Java</a>
+    </div>
+    
+    <div id="subscribe" class="footitems">
+      <h4>Subscribe</h4>
+      <form action="">
+        <input type="email" placeholder="example.@gmail.com">
+        <input type="submit" value="subscribe">
+      </form>
+    </div>
+  </footer>
   
+</body>
+
+</html>
