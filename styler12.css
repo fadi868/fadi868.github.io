@@ -161,10 +161,10 @@ nav ul li a {
 }*/
 .introweb{
   background: url('introimg1.png') no-repeat center center/cover;
- /* position: absolute;
+  position: absolute;
   left: 0px;
   right: 0px;
-  top: 54px;*/
+  top: 54px;
   max-height: 45vh;
   max-width: 950px;
   text-align: center;
